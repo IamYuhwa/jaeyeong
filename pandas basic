@@ -5,13 +5,13 @@ print(df)
 
 
 import pandas as pd
-df = pd.read_excel(io = 'nsn_lte_cellDB.xlsx',sheet_name= 'nsn', usecols= 'C, E, Y')
+df = pd.read_excel(io = 'db.xlsx',sheet_name= 'nsn', usecols= 'C, E, Y')
 
 
-(venv) C:\DATAA\alone python> c: && cd "c:\DATAA\alone python" && cmd /C ""c:\DATAA\alone python\venv\Scripts\python.exe" c:\Users\jaeey\.vscode\extensions\ms-python.python-2023.14.0\pythonFiles\lib\python\debugpy\adapter/../..\debugpy\launcher 53089 -- "c:\DATAA\alone python\action\NOKIA_LTE.py" "
+(venv) C:\DATAA\alone python> c: && cd "c:\DATAA\alone python" && cmd /C ""c:\DATAA\alone python\venv\Scripts\python.exe" c:\Users\jaeey\.vscode\extensions\ms-python.python-2023.14.0\pythonFiles\lib\python\debugpy\adapter/../..\debugpy\launcher 53119 -- "c:\DATAA\alone python\action\NOKIA_LTE.py" "
 Traceback (most recent call last):
   File "c:\DATAA\alone python\action\NOKIA_LTE.py", line 2, in <module>
-    df = pd.read_excel(io = 'nsn_lte_cellDB.xlsx',sheet_name= 'nsn', usecols= 'C, E, Y')
+    df = pd.read_excel(io = 'db.xlsx',sheet_name= 'nsn', usecols= 'C, E, Y')
   File "c:\DATAA\alone python\venv\lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
     io = ExcelFile(io, storage_options=storage_options, engine=engine)
   File "c:\DATAA\alone python\venv\lib\site-packages\pandas\io\excel\_base.py", line 1496, in __init__
@@ -20,4 +20,4 @@ Traceback (most recent call last):
     with get_handle(
   File "c:\DATAA\alone python\venv\lib\site-packages\pandas\io\common.py", line 868, in get_handle
     handle = open(handle, ioargs.mode)
-FileNotFoundError: [Errno 2] No such file or directory: 'nsn_lte_cellDB.xlsx'
+FileNotFoundError: [Errno 2] No such file or directory: 'db.xlsx'
