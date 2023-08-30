@@ -1,8 +1,11 @@
+
+#for example
 import pandas as pd
 file_name = '________.xlsx'
 df = pd.read_excel(file_name, engine='openpyxl')
 print(df)
 
+#activity
 
 import pandas as pd
 df = pd.read_excel(io = 'db.xlsx',sheet_name= 'nsn', usecols= 'C, E, Y')
