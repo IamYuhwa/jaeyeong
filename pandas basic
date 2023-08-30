@@ -2,3 +2,7 @@ import pandas as pd
 file_name = '________.xlsx'
 df = pd.read_excel(file_name, engine='openpyxl')
 print(df)
+
+
+import pandas as pd
+df = pd.read_excel(io = 'nsn_lte_cellDB.xlsx',sheet_name= 'nsn', usecols= 'C, E, Y')
